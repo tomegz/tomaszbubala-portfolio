@@ -1,0 +1,10 @@
+// Slide down animation for header
+@keyframes headerSlideDown{
+  0%{
+    transform: translate(0, -70px);
+  }
+
+  100%{
+    transform: translate(0, 0);
+  }
+}

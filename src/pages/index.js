@@ -1,23 +1,50 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 
 import Socials from "../components/Socials";
 import '../sass/style.scss';
 
+const devIcons = {
+  html5: "devicon-html5-plain",
+  sass: "devicon-sass-original",
+  react: "devicon-react-original",
+  javascript: "devicon-javascript-plain",
+  nodejs: "devicon-nodejs-plain",
+  mongodb: "devicon-mongodb-plain",
+  css3: "devicon-css3-plain"
+}
+
+const Devicon = (props) => (
+  <span>
+    <i className={props.name}></i>
+  </span>
+)
+
 const IndexPage = () => (
-  <div className="index-page">
-    <div className="card">
-      <div className="image-wrapper">
-        <img className="profile-picture" src="/images/face.jpg" />
+  <div>
+    <Helmet>
+      <link rel="stylesheet" 
+            href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
+    </Helmet>
+    <div className="index-page">
+      <div className="card">
+        <div className="image-wrapper">
+          <div className="profile-picture"></div>
+        </div>
+        <div className="content">
+          <h1>Tomasz Bubała</h1>
+          <h3>JavaScript Developer</h3>
+          <p>
+            <span>Web app builder and avid coder.</span>
+            <span>Also an amateur cook and Tekken try-hard.</span>
+          </p>
+          <Socials />
+        </div>
       </div>
-      <div className="content">
-        <h1>Tomasz Bubała</h1>
-        <h2>JavaScript Developer</h2>
-        <p>
-          <span>Web app builder and avid coder.</span>
-          <span>Also an amateur cook and Tekken try-hard.</span>
-        </p>
-        <Socials />
+      <div className="devicons">
+        {Object.keys(devIcons)
+          .map(k => <Devicon name={devIcons[k]} />)}
       </div>
     </div>
   </div>

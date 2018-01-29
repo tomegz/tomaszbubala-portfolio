@@ -1,5 +1,8 @@
 html {
   box-sizing: border-box;
+  @include media_query($small-mobile-breakpoint) {
+  	font-size: 80%;
+  }
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -10,5 +13,5 @@ body {
 .wrapper {
   margin: 0 auto;
   max-width: 960px;
-  padding: 0 6rem;
+  padding: 0 1rem;
 }

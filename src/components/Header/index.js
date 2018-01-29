@@ -9,10 +9,6 @@ const ListLink = (props) => (
 
 const Header = () => (
   <div className="header">
-    <Link className="logo-link" to="/">
-      <div className="diamond"></div>
-      <div className="name">Tomasz Bubała</div>
-    </Link>
     <nav className="nav">
       <ul className="nav-list">
         <ListLink to="/">Home</ListLink>

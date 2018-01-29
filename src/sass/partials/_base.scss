@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  //min-height: 100%;
   @include media_query($small-mobile-breakpoint) {
   	font-size: 80%;
   }
@@ -9,6 +10,8 @@ html {
 }
 body {
   background: linear-gradient(135deg, white, white 70%, $primary-color);
+  background-attachment: fixed;
+  height: 100vh;
 }
 .wrapper {
   margin: 0 auto;

@@ -27,10 +27,7 @@
   z-index: 999;
   will-change: transform;
   .nav {
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    @extend %noselect;
   	.nav-list {
   	  margin: 0;
       padding: 0;

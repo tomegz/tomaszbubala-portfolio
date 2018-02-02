@@ -1,8 +1,16 @@
 import React from 'react';
 import Link from "gatsby-link";
-import Iphone from '../../components/Iphone';
-import TechStack from '../../components/TechStack';
-import Socials from '../../components/Socials';
+import Iphone from '../../../components/Iphone';
+import Carousel from '../../../components/Carousel';
+import TechStack from '../../../components/TechStack';
+import Socials from '../../../components/Socials';
+
+const images = [
+  { src: require("./img/scrabblista-mobile-1.png") },
+  { src: require("./img/scrabblista-mobile-2.png") },
+  { src: require("./img/scrabblista-mobile-3.png") },
+  { src: require("./img/scrabblista-mobile-4.png") }
+];
 
 const ProjectScrabblista = () => {
   const technologies = ["Ruby on Rails", "Ruby", "JavaScript"];
@@ -12,7 +20,7 @@ const ProjectScrabblista = () => {
       <div className="project-inner">
         <div className="project-media">
           <Iphone>
-            <div></div>
+            <Carousel images={images} />
           </Iphone>
         </div>
         <div className="project-description">

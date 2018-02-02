@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from "gatsby-link";
-import Socials from '../../components/Socials';
+import Socials from '../../../components/Socials';
 
 const Project3dEstate = () => {
   const technologies = ["A-Frame", "Three.js", "Node.js", "MongoDB", "Pug", "Sass"];

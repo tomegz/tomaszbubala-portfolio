@@ -1,0 +1,21 @@
+.carousel-content {
+  outline: none;
+  & > img {
+  	display: none;
+  }
+  img.active {
+  	display: block;
+  }
+  .arrow {
+    width: 3%;
+    min-width: 24px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -12px;
+    animation: arrowFlash 3s ease infinite;
+  }
+  &:hover .arrow {
+    animation: none;
+  }
+}

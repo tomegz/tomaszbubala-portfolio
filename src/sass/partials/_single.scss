@@ -4,11 +4,15 @@
   .project-inner {
   	display: flex;
   	flex-wrap: wrap;
+    justify-content: center;
   	margin-bottom: 20px;
   	& > div {
   	  @include media_query($tablet-breakpoint) {
   	  	flex-basis: 100%;
   	  }
+      @include media_query($mobile-breakpoint) {
+        flex-basis: 80%;
+      }
   	  flex-basis: 50%;
   	}
   	.project-media {

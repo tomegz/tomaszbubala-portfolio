@@ -1,0 +1,34 @@
+.project-single {
+  padding-top: 100px;
+  text-align: center;
+  .project-inner {
+  	display: flex;
+  	flex-wrap: wrap;
+  	margin-bottom: 20px;
+  	& > div {
+  	  @include media_query($tablet-breakpoint) {
+  	  	flex-basis: 100%;
+  	  }
+  	  flex-basis: 50%;
+  	}
+  	.project-media {
+  	  @include media_query($tablet-breakpoint) {
+  	  	justify-content: center;
+  	  }
+  	  display: flex;
+  	  justify-content: left;
+  	}
+  	.project-description {
+  	  @include media_query($tablet-breakpoint) {
+  	  	align-items: center;
+  	  	padding-left: 40px;
+  	  	padding-right: 40px;
+  	  }
+  	  display: flex;
+  	  flex-direction: column;
+  	  align-items: left;
+  	  justify-content: center;
+  	  text-align: left;
+  	}
+  }
+}

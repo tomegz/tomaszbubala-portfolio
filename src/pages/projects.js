@@ -1,17 +1,21 @@
 import React from 'react';
+import Link from "gatsby-link";
 import Socials from '../components/Socials';
 
 const projects = [
   {
     name: "3D Estate",
+    slug: "3d-estate",
     image_url: "/images/project-3destate.png"
   },
   {
     name: "Price tag generator",
+    slug: "price-tag-generator",
     image_url: "/images/project-ptg.png"
   },
   {
     name: "Scrabblista",
+    slug: "scrabblista",
     image_url: "/images/project-scrabblista.png"
   }
 ];
@@ -26,7 +30,7 @@ const ProjectsPage = () => (
     <div className="portfolio-wrapper">
       {projects.map(project => (
         <div className="portfolio-item">
-          <a href='#' target ="_blank" style={{ textDecoration: "none" }}>
+          <Link to={`/project/${project.slug}`} style={{ textDecoration: "none" }}>
             <div className="portfolio-item-image" 
                  style={{ backgroundImage: `url(${project.image_url})`}}>
             </div>
@@ -35,7 +39,7 @@ const ProjectsPage = () => (
                 {project.name}
               </div>
             </div>
-          </a>
+          </Link>
         </div>
       ))}
     </div>

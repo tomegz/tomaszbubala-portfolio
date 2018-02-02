@@ -14,3 +14,12 @@ $bodyfont-size: 16px;
 $tablet-breakpoint: 1199px;
 $mobile-breakpoint: 767px;
 $small-mobile-breakpoint: 450px;
+
+// placeholders
+
+%noselect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

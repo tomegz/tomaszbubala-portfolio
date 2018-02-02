@@ -1,0 +1,28 @@
+.tech-stack-wrapper {
+    @include media_query($tablet-breakpoint) {
+  	  text-align: center;
+  	}
+  .tech-stack-list {
+  	@include media_query($tablet-breakpoint) {
+  	  justify-content: center;
+  	}
+  	display: flex;
+  	flex-wrap: wrap;
+  	list-style: none;
+  	margin: 0;
+  	.tech-stack-single {
+  	  @include media_query($tablet-breakpoint) {
+  	  	background: $primary-color;
+  	  }
+  	  @extend %noselect;
+  	  cursor: default;
+  	  color: $off-white;
+  	  background: rgba($primary-color, 0.85);
+      margin-right: 20px;
+      padding: 5px 10px;
+      &:hover {
+        background: $primary-color;
+      }
+  	}
+  }
+}

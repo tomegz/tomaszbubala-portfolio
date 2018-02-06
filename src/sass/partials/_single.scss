@@ -21,6 +21,9 @@
   	  }
   	  display: flex;
   	  justify-content: left;
+      &-large {
+        flex-basis: 100%;
+      }
   	}
   	.project-description {
   	  @include media_query($tablet-breakpoint) {

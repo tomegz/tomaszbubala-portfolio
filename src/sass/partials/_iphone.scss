@@ -1,4 +1,7 @@
 .iphone-wrapper {
+  @include media_query($small-mobile-breakpoint) {
+    width: 80%;
+  }
   .iphone {
   	@extend %noselect;
   	position: relative;
@@ -8,14 +11,12 @@
     margin: 0 auto;
     .iphone-content {
       cursor: pointer;
-      position: absolute;
-      width: 88.8%;
-      top: 13.3%;
-      left: 6.3%;
-      max-height: 70.6%;
+      width: 89%;
+      max-height: 77.8%;
       overflow: hidden;
-      border: 2px solid $off-black;
-      border-radius: 5px;
+      position: absolute;
+      top: 13.4%;
+      left: 6%;
     }
   }
 }

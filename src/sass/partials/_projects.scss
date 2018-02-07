@@ -23,6 +23,9 @@
       p {
       	margin-bottom: 0;
       }
+      a {
+		@extend %link;
+	  }
 	}
 	.portfolio-wrapper {
 	  @include media_query($mobile-breakpoint){

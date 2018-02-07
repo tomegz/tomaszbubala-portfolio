@@ -23,3 +23,10 @@ $small-mobile-breakpoint: 450px;
   -ms-user-select: none;
   user-select: none;
 }
+
+%link {
+  text-decoration: none;
+  color: $off-black;
+  border-bottom: 1px solid #{$primary-color};
+  font-size: 120%;
+}

@@ -17,10 +17,14 @@ const desktopImages = [
 ];
 
 const Project3dEstate = () => {
-  const technologies = ["A-Frame", "Three.js", "Node.js", "MongoDB", "Pug", "Sass"];
+  const technologies = ["A-Frame", "Three.js", "Node.js", "MongoDB", "AWS S3", "Pug", "Sass"];
   return (
     <div className="project-single">
-      <h1>3d Estate</h1>
+      <h1>3D Estate</h1>
+      <div className="project-links">
+        <span><a href="http://www.3destate.pl/">Product website</a></span>
+        <span><a href="https://digital-wanderer.herokuapp.com/tour/5a72d715b8bde40014c33e86" target="_blank">Example tour</a></span>
+      </div>
       <div className="project-inner">
         <div className="project-media">
           <Iphone>
@@ -29,7 +33,9 @@ const Project3dEstate = () => {
         </div>
         <div className="project-description">
           <h2>Project</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac tincidunt ligula, ut tristique elit. Phasellus in pharetra sapien. Ut pulvinar a sem sed tempus. Sed porttitor, mauris ut congue tristique, libero risus cursus velit, id ultrices est odio at augue. Pellentesque non feugiat nisl. Donec diam nisi, porttitor nec elementum nec, pharetra a leo. Quisque sit amet diam fringilla elit condimentum ornare. Curabitur rhoncus nulla vel velit commodo egestas. Vestibulum non rhoncus lacus. Mauris augue augue, rutrum vel enim vitae, pharetra hendrerit purus. </p>
+          <p>In October 2017 I met up with <a href="http://www.digitalwanderer.pl/" target="_blank">Digital Wanderer</a> team, as they were looking for a JavaScript developer to create a fully automated tool for generating 3D apartment tours. I was responsible for the infrastructure, providing graphical user interface for creating a tour manually, an API for doing so programatically and creating visible part of 3D tours. Now the process is fully automated, from rendering images (client's part), through <a href="https://aws.amazon.com/s3/" target="_blank">AWS S3</a> image upload, to request to the API to create a tour. I used MongoDB to store tours' data and <a href="https://aframe.io/" target="_blank">A-Frame</a> along with Three.js for tour's view.</p>
+          <p>The app works on most modern devices, the UI is responsive for all kinds of screens and user is able to view tour in cardboard mode on mobile, moving around apartment by gazing at hotspots.</p>
+          <p></p>
           <TechStack technologies={technologies} />
         </div>
         <div className="project-media-large">

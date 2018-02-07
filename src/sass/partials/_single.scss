@@ -1,11 +1,19 @@
 .project-single {
   padding-top: 100px;
   text-align: center;
+  a {
+    @extend %link;
+  }
+  span {
+    margin-right: 20px;
+  }
+  .project-links {
+    margin-bottom: 20px;
+  }
   .project-inner {
   	display: flex;
   	flex-wrap: wrap;
     justify-content: center;
-  	margin-bottom: 20px;
   	& > div {
   	  @include media_query($tablet-breakpoint) {
   	  	flex-basis: 100%;
@@ -28,6 +36,9 @@
   	  	align-items: center;
   	  	padding: 0;
   	  }
+      a {
+        font-size: inherit;
+      }
       margin-bottom: 20px;
       padding: 0 40px;
   	  display: flex;
@@ -35,6 +46,22 @@
   	  align-items: left;
   	  justify-content: center;
   	  text-align: left;
+      &-large {
+        @include media_query($tablet-breakpoint) {
+          padding: 0 20px;
+        }
+        a {
+          font-size: inherit;
+        }
+        margin-bottom: 20px;
+        padding: 0 100px;
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+      }
   	}
   }
 }

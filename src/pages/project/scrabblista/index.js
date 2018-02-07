@@ -23,6 +23,10 @@ const ProjectScrabblista = () => {
   return (
     <div className="project-single">
       <h1>Scrabblista</h1>
+      <div className="project-links">
+        <span><a href="http://www.scrabblista.pl" target="_blank">Live version</a></span>
+        <span><a href="https://github.com/tomegz/scrabblista" target="_blank">Source code</a></span>
+      </div>
       <div className="project-inner">
         <div className="project-media">
           <Iphone>
@@ -31,7 +35,7 @@ const ProjectScrabblista = () => {
         </div>
         <div className="project-description">
           <h2>Project</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac tincidunt ligula, ut tristique elit. Phasellus in pharetra sapien. Ut pulvinar a sem sed tempus. Sed porttitor, mauris ut congue tristique, libero risus cursus velit, id ultrices est odio at augue. Pellentesque non feugiat nisl. Donec diam nisi, porttitor nec elementum nec, pharetra a leo. Quisque sit amet diam fringilla elit condimentum ornare. Curabitur rhoncus nulla vel velit commodo egestas. Vestibulum non rhoncus lacus. Mauris augue augue, rutrum vel enim vitae, pharetra hendrerit purus. </p>
+          <p>On 11.02.2017, after three months of learning web development from online tutorials and finishing couple of small projects I decided to create my first server app. Instead of going with facebook/twitter/reddit clone, I decided to stand out and create a word finder for Scrabble. Little did I know, that effective search through over 2,700,000 scrabble-viable words (polish dictionary), could be a complex task. After few failed attemps with optimizing SQL queries I decided to store whole dictionary in a <a href="https://en.wikipedia.org/wiki/Trie">Trie</a>. This choice of data structure along with <a href="https://en.wikipedia.org/wiki/Depth-first_search">depth-first search algorithm</a> implementation let me cut down search time to an acceptable value. Besides searching for words, that can be made from a given hand, user is also able to sort the result by word length, or highest score. In the future, if time allows me to get back to this project, I will hopefully make it twice as fast, include English dictionary and add pagination for search results.</p>
           <TechStack technologies={technologies} />
         </div>
         <div className="project-media-large">

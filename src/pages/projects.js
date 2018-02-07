@@ -28,8 +28,8 @@ const ProjectsPage = () => (
          Not all of them are commercial, but every one of them is 100% passion.</p>
     </div>
     <div className="portfolio-wrapper">
-      {projects.map(project => (
-        <div className="portfolio-item">
+      {projects.map((project, i) => (
+        <div key={i} className="portfolio-item">
           <Link to={`/project/${project.slug}`} style={{ textDecoration: "none" }}>
             <div className="portfolio-item-image" 
                  style={{ backgroundImage: `url(${project.image_url})`}}>

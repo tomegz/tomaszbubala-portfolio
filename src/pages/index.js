@@ -44,7 +44,7 @@ const IndexPage = () => (
       </div>
       <div className="devicons">
         {Object.keys(devIcons)
-          .map(k => <Devicon name={devIcons[k]} />)}
+          .map((k, i) => <Devicon key={i} name={devIcons[k]} />)}
       </div>
     </div>
   </div>

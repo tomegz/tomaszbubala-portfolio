@@ -1,0 +1,19 @@
+{
+  "particles": {
+  	"color": {
+  	  "value": "#663399"
+    },
+    "line_linked": {
+      "color": "#663399"
+    }
+  },
+  "interactivity": {
+  	"detect_on": "window",
+  	"events": {
+      "onhover": {
+      	"enable": true,
+      	"mode": "repulse"
+      }
+  	}
+  }
+}

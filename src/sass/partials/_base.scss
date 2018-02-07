@@ -9,11 +9,12 @@ html {
   box-sizing: inherit;
 }
 body {
-  background: linear-gradient(135deg, white, white 70%, $primary-color);
-  background-attachment: fixed;
-  height: 100vh;
+  //background: linear-gradient(135deg, white, white 70%, $primary-color);
+  //background-attachment: fixed;
+  //height: 100vh;
 }
 .wrapper {
+  position: relative;
   @include media_query($small-mobile-breakpoint) {
     padding: 0;
   }

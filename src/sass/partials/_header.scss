@@ -1,11 +1,9 @@
 .header {
   @include media_query($tablet-breakpoint){
-    padding-left: 40px;
     padding-right: 40px;
   }
   @include media_query($mobile-breakpoint){
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 0;
     animation: none;
   }
   animation: headerSlideDown 0.7s 0.5s;
@@ -13,9 +11,7 @@
   box-sizing: border-box;
   width: 100%;
   height: 60px;
-  padding-left: 30px;
-  padding-right: 30px;
-  //border-top: 4px solid #{$primary-color};
+  padding-right: 20px;
   border-bottom: 4px solid #{$primary-color};
   display: flex;
   justify-content: flex-end;
@@ -32,6 +28,7 @@
   	  margin: 0;
       padding: 0;
       list-style: none;
+      margin-right: 0;
   	  li {
   	  	display: inline-block;
         margin: 0;
@@ -57,7 +54,16 @@
           color: $primary-accent;
         }
         &:last-of-type{
+          @include media_query($mobile-breakpoint) {
+            display: none;
+          }
           margin-right: 0;
+          border-bottom: 1px solid $primary-color;
+        }
+        &:nth-child(2) {
+          @include media_query($small-mobile-breakpoint) {
+            margin-right: 10px;
+          }
         }
   	  }
   	}

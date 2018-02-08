@@ -13,6 +13,9 @@ const Header = () => (
       <ul className="nav-list">
         <ListLink to="/">Home</ListLink>
         <ListLink to="/projects">Projects</ListLink>
+        <li>
+          <a href="./static/example.pdf" target="_blank">Download CV</a>
+        </li>
       </ul>
     </nav>
   </div>

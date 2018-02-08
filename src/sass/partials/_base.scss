@@ -8,11 +8,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-body {
-  //background: linear-gradient(135deg, white, white 70%, $primary-color);
-  //background-attachment: fixed;
-  //height: 100vh;
-}
 .wrapper {
   position: relative;
   @include media_query($small-mobile-breakpoint) {
@@ -20,4 +15,9 @@ body {
   }
   margin: 0 auto;
   padding: 0 3rem;
+}
+.particles-wrapper {
+  @include media_query($small-mobile-breakpoint) {
+    display: none;
+  }
 }

@@ -25,6 +25,7 @@
       }
       a {
 		@extend %link;
+		font-size: inherit;
 	  }
 	}
 	.portfolio-wrapper {

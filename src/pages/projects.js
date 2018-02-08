@@ -24,8 +24,7 @@ const ProjectsPage = () => (
   <div className="projects-page">
     <h1>Projects</h1>
     <div className="page-desc">
-      <p>You can find some of the projects i was working on in the past months below.
-         Not all of them are commercial, but every one of them is 100% passion.</p>
+      <p>Between learning new skills online, <a href="https://twitter.com/Codecademy/status/862357431795556352" target="_blank">participating in challenges</a> and trying to contribute on <a href="https://stackoverflow.com/users/7475314/tomasz-buba%c5%82a?tab=profile" target="_blank">stackoverflow</a> and various slack channels, I mostly focus on doing personal projects. Below are some of them - the ones I am most proud of. Visit my <a href="https://github.com/tomegz" target="_blank">github</a> to see almost every project I've done in the past months.</p>
     </div>
     <div className="portfolio-wrapper">
       {projects.map((project, i) => (

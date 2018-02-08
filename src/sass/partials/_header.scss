@@ -50,9 +50,9 @@
             color: $primary-color;
           }
   	  	}
-        &:first-of-type .active {
+        /*&:first-of-type .active {
           color: $primary-accent;
-        }
+        }*/
         &:last-of-type{
           @include media_query($mobile-breakpoint) {
             display: none;

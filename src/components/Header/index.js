@@ -47,7 +47,7 @@ class Header extends Component {
                 );
             })}
             <li>
-              <a href="./static/example.pdf" target="_blank">Download CV</a>
+              <a href="./static/cv-tomaszbubala.pdf" target="_blank">Download CV</a>
             </li>
           </ul>
         </nav>

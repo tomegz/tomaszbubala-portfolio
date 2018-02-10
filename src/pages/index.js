@@ -35,7 +35,7 @@ const IndexPage = () => (
         <div className="content">
           <h1>Tomasz Bubała</h1>
           <h3>JavaScript Developer</h3>
-          <p>Self-taught JavaScript developer, currently working on my own but would love to join a team and learn more. Currently focused on learning React, Node.js and MongoDB. Also an amateur cook and Tekken try-hard.</p>
+          <p>Self-taught JavaScript developer, currently working on his own but would love to join a team and learn more. Currently focused on learning React, Node.js and MongoDB. Also an amateur cook and Tekken try-hard.</p>
           <Socials />
         </div>
       </div>

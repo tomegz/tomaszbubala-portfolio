@@ -24,6 +24,7 @@ class Carousel extends Component {
               <img 
                 key={i}
                 src={img.src} 
+                alt={img.description}
                 className={state.activeIndex === i ? "active" : ""}
                 draggable={false}
               />

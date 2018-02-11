@@ -15,7 +15,7 @@
         border-bottom: none;
         color: $primary-color;
   	  	display: inline-block;
-  	  	font-size: 1.5em; //should be 24px to ems
+  	  	font-size: ems(24px);
   	  	line-height: 24px;
   	  	transition: transform 0.4s;
   	  	&:hover {

@@ -7,15 +7,22 @@ import TechStack from '../../../components/TechStack';
 import Socials from '../../../components/Socials';
 
 const mobileImages = [
-  { src: require("./img/scrabblista-mobile-1.png") },
-  { src: require("./img/scrabblista-mobile-2.png") },
-  { src: require("./img/scrabblista-mobile-3.png") },
-  { src: require("./img/scrabblista-mobile-4.png") }
+  { src: require("./img/scrabblista-mobile-1.png"),
+    description: "Scrabblista - main view" },
+  { src: require("./img/scrabblista-mobile-2.png"),
+    description: "Scrabblista - search query entered" },
+  { src: require("./img/scrabblista-mobile-3.png"),
+    description: "Scrabblista - search results sorted by length" },
+  { src: require("./img/scrabblista-mobile-4.png"),
+    description: "Scrabblista - search results sorted by points" }
 ];
 const desktopImages = [
-  { src: require("./img/scrabblista-desktop-1.png") },
-  { src: require("./img/scrabblista-desktop-2.png") },
-  { src: require("./img/scrabblista-desktop-3.png") }
+  { src: require("./img/scrabblista-desktop-1.png"),
+    description: "Scrabblista - main view" },
+  { src: require("./img/scrabblista-desktop-2.png"),
+    description: "Scrabblista - search query entered" },
+  { src: require("./img/scrabblista-desktop-3.png"),
+    description: "Scrabblista - search results" }
 ];
 
 const ProjectScrabblista = () => {
@@ -35,7 +42,7 @@ const ProjectScrabblista = () => {
         </div>
         <div className="project-description">
           <h2>Project</h2>
-          <p>On 11.02.2017, after three months of learning web development from online tutorials and finishing couple of small projects I decided to create my first server app. Instead of going with facebook/twitter/reddit clone, I decided to stand out and create a word finder for Scrabble. Little did I know, that effective search through over 2,700,000 scrabble-viable words (polish dictionary), could be a complex task. After few failed attemps with optimizing SQL queries I decided to store whole dictionary in a <a href="https://en.wikipedia.org/wiki/Trie">Trie</a>. This choice of data structure along with <a href="https://en.wikipedia.org/wiki/Depth-first_search">depth-first search algorithm</a> implementation let me cut down search time to an acceptable value. Besides searching for words, that can be made from a given hand, user is also able to sort the result by word length, or highest score. In the future, if time allows me to get back to this project, I will hopefully make it twice as fast, include English dictionary and add pagination for search results.</p>
+          <p>In February 2017, after three months of learning web development from online tutorials and finishing couple of small projects I decided to create my first server app. Instead of going with Facebook / Twitter/ Reddit clone, I decided to stand out and create a word finder for Scrabble. Little did I know, that effective search through over 2,700,000 scrabble-viable words (Polish dictionary), could be a complex task. After few failed attemps with optimizing SQL queries I decided to store whole dictionary in a <a href="https://en.wikipedia.org/wiki/Trie" target="_blank">Trie</a>. This choice of data structure along with <a href="https://en.wikipedia.org/wiki/Depth-first_search" target="_blank">depth-first search algorithm</a> implementation let me cut down search time to an acceptable value. Besides searching for words, that can be made from a given hand, user is also able to sort the result by word length, or highest score. In the future, if time allows me to get back to this project, I will hopefully make it twice as fast, include English dictionary and add pagination for search results.</p>
           <TechStack technologies={technologies} />
         </div>
         <div className="project-media-large">

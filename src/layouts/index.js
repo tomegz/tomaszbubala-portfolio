@@ -10,10 +10,12 @@ import '../sass/style.scss';
 const TemplateWrapper = ({children}) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Tomasz Bubała - Portfolio"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', 
+          content: 'Tomasz Bubała - Javascript Developer' },
+        { name: 'keywords', 
+          content: 'Tomasz Bubała, portfolio, javascript, react, nodejs, mongodb, gatsby, gatsbyjs' },
       ]}
      />
     <Header />

@@ -7,13 +7,18 @@ import TechStack from '../../../components/TechStack';
 import Socials from '../../../components/Socials';
 
 const mobileImages = [
-  { src: require("./img/3d-estate-mobile-1.png") },
-  { src: require("./img/3d-estate-mobile-2.png") }
+  { src: require("./img/3d-estate-mobile-1.png"),
+    description: "3D Estate fullscreen minimap" },
+  { src: require("./img/3d-estate-mobile-2.png"),
+    description: "3D Estate tour view" }
 ];
 const desktopImages = [
-  { src: require("./img/3d-estate-desktop-1.png") },
-  { src: require("./img/3d-estate-desktop-2.png") },
-  { src: require("./img/3d-estate-desktop-3.png") }
+  { src: require("./img/3d-estate-desktop-1.png"),
+    description: "3D Estate tour - room 1" },
+  { src: require("./img/3d-estate-desktop-2.png"),
+    description: "3D Estate tour - room 2" },
+  { src: require("./img/3d-estate-desktop-3.png"),
+    description: "3D Estate tour - room 3" }
 ];
 
 const Project3dEstate = () => {

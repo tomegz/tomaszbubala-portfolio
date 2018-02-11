@@ -6,17 +6,17 @@ const projects = [
   {
     name: "3D Estate",
     slug: "3d-estate",
-    image_url: "/images/project-3destate.png"
+    image_url: require("../static/images/project-3destate.png")
   },
   {
     name: "Price tag generator",
     slug: "price-tag-generator",
-    image_url: "/images/project-ptg.png"
+    image_url: require("../static/images/project-ptg.png")
   },
   {
     name: "Scrabblista",
     slug: "scrabblista",
-    image_url: "/images/project-scrabblista.png"
+    image_url: require("../static/images/project-scrabblista.png")
   }
 ];
 

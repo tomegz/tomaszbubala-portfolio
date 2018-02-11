@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
+import cv from '../../static/cv-tomaszbubala.pdf';
 
 class Header extends Component {
   constructor() {
@@ -47,7 +48,7 @@ class Header extends Component {
                 );
             })}
             <li>
-              <a href="./static/cv-tomaszbubala.pdf" target="_blank">Download CV</a>
+              <a href={cv} target="_blank">Download CV</a>
             </li>
           </ul>
         </nav>

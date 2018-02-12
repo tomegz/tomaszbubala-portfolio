@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
+  overflow: auto;
   @include media_query($small-mobile-breakpoint) {
   	font-size: 80%;
   }
@@ -9,6 +10,7 @@ html {
   box-sizing: inherit;
 }
 .wrapper {
+  max-width: 1200px;
   position: relative;
   @include media_query($small-mobile-breakpoint) {
     padding: 0;

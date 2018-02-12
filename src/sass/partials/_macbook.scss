@@ -1,8 +1,8 @@
 .macbook-wrapper {
   .macbook {
-  	@extend %noselect;
-  	position: relative;
-  	display: flex;
+    @extend %noselect;
+    position: relative;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;

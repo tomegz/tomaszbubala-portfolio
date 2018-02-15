@@ -5,14 +5,21 @@ class Carousel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeIndex: 0
+      activeIndex: -1
     };
     this.changeImage = this.changeImage.bind(this);
+    this.handleLoaded = this.handleLoaded.bind(this);
   }
   changeImage() {
     const current = this.state.activeIndex;
     const activeIndex = this.props.images.length - 1 === current ? 0 : current + 1;
     this.setState({ activeIndex });
+  }
+  handleLoaded(index) {
+    if(index === 0) {
+      const activeIndex = index;
+      this.setState({ activeIndex });
+    }
   }
   render() {
     const { state } = this;
@@ -25,6 +32,7 @@ class Carousel extends Component {
                 key={i}
                 src={img.src} 
                 alt={img.description}
+                onLoad={() => this.handleLoaded(i)}
                 className={state.activeIndex === i ? "active" : ""}
                 draggable={false}
               />

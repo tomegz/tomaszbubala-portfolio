@@ -8,7 +8,7 @@ import FaEnvelope from 'react-icons/lib/fa/envelope'
 
 const Socials = props => {
   const github = "https://github.com/tomegz";
-  const linkedin = "https://www.linkedin.com/in/tomasz-buba%C5%82a-55790b145/";
+  const linkedin = "https://www.linkedin.com/in/tomaszbubala/";
   const stackoverflow = "https://stackoverflow.com/users/7475314/tomasz-buba%c5%82a?tab=profile";
   const mailto = "mailto:tomaszbubala37@gmail.com";
   return (

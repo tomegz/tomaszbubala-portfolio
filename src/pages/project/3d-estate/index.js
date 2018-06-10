@@ -28,7 +28,7 @@ const Project3dEstate = () => {
       <h1>3D Estate</h1>
       <div className="project-links">
         <span><a href="http://www.3destate.pl/" target="_blank">Product website</a></span>
-        <span><a href="https://digital-wanderer.herokuapp.com/tour/5a72d715b8bde40014c33e86" target="_blank">Example tour</a></span>
+        <span><a href="https://obido.pl/app/obido-green-mokotow/mieszkanie9_A_3_2.3dpreview.5b96e7d83e0e10889c90069434acb08b" target="_blank">Example tour</a></span>
       </div>
       <div className="project-inner">
         <div className="project-media">

@@ -9,6 +9,11 @@ const projects = [
     image_url: require("../static/images/project-3destate.png")
   },
   {
+    name: "Github Battles",
+    slug: "github-battles",
+    image_url: require("../static/images/project-github-battles.png")
+  },
+  {
     name: "Price tag generator",
     slug: "price-tag-generator",
     image_url: require("../static/images/project-ptg.png")

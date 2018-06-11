@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => {
       <div className="index-page">
         <div className="card">
           <div className="image-wrapper">
-            <div className="profile-picture" style={{ backgroundImage: `url(${require("../static/images/profile-image.jpg")})` }}></div>
+            <div className="profile-picture" style={{ backgroundImage: `url(${require("../static/images/profile-image-1.jpg")})` }}></div>
           </div>
           <div className="content">
             <h1>Tomasz Bubała</h1>
